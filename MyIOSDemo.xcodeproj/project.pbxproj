@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9946DC032875157400D695B7 /* MyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9946DC022875157400D695B7 /* MyRootViewController.m */; };
 		996AB8CD284C5239000B3AB1 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 996AB8CC284C5239000B3AB1 /* Student.m */; };
+		99B273DB28743F7500270276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273DA28743F7500270276 /* AppDelegate.m */; };
+		99B273DE28743F7500270276 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273DD28743F7500270276 /* SceneDelegate.m */; };
+		99B273E628743F7700270276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B273E528743F7700270276 /* Assets.xcassets */; };
+		99B273E928743F7700270276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B273E728743F7700270276 /* LaunchScreen.storyboard */; };
+		99B273EC28743F7700270276 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273EB28743F7700270276 /* main.m */; };
+		99BE9A45287045670077D28D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9A44287045670077D28D /* AppDelegate.m */; };
+		99BE9A48287045670077D28D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9A47287045670077D28D /* SceneDelegate.m */; };
+		99BE9A50287045690077D28D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BE9A4F287045690077D28D /* Assets.xcassets */; };
+		99BE9A53287045690077D28D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BE9A51287045690077D28D /* LaunchScreen.storyboard */; };
+		99BE9A56287045690077D28D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9A55287045690077D28D /* main.m */; };
+		99BE9A5D2872805F0077D28D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9A5B2872805F0077D28D /* RootViewController.m */; };
+		99BE9A5E2872805F0077D28D /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99BE9A5C2872805F0077D28D /* RootViewController.xib */; };
 		99C9C409284A0364005E2FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9C408284A0364005E2FB5 /* AppDelegate.m */; };
 		99C9C40C284A0364005E2FB5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9C40B284A0364005E2FB5 /* SceneDelegate.m */; };
 		99C9C40F284A0364005E2FB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9C40E284A0364005E2FB5 /* ViewController.m */; };
@@ -39,8 +52,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99380A53286AA83B00542BDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9946DC012875157400D695B7 /* MyRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRootViewController.h; sourceTree = "<group>"; };
+		9946DC022875157400D695B7 /* MyRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRootViewController.m; sourceTree = "<group>"; };
 		996AB8CB284C5227000B3AB1 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		996AB8CC284C5239000B3AB1 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		99B273D728743F7400270276 /* CodeViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B273D928743F7500270276 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		99B273DA28743F7500270276 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		99B273DC28743F7500270276 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		99B273DD28743F7500270276 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		99B273E528743F7700270276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99B273E828743F7700270276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99B273EA28743F7700270276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B273EB28743F7700270276 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99BE9A41287045670077D28D /* XibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99BE9A43287045670077D28D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		99BE9A44287045670077D28D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		99BE9A46287045670077D28D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		99BE9A47287045670077D28D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		99BE9A4F287045690077D28D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99BE9A52287045690077D28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99BE9A54287045690077D28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99BE9A55287045690077D28D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99BE9A5A2872805F0077D28D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		99BE9A5B2872805F0077D28D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		99BE9A5C2872805F0077D28D /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		99C9C404284A0364005E2FB5 /* MyIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C9C407284A0364005E2FB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99C9C408284A0364005E2FB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +99,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		99B273D428743F7400270276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99BE9A3E287045670077D28D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99C9C401284A0364005E2FB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,12 +137,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99B273D828743F7500270276 /* CodeViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				99B273D928743F7500270276 /* AppDelegate.h */,
+				99B273DA28743F7500270276 /* AppDelegate.m */,
+				99B273DC28743F7500270276 /* SceneDelegate.h */,
+				99B273DD28743F7500270276 /* SceneDelegate.m */,
+				99B273E528743F7700270276 /* Assets.xcassets */,
+				99B273E728743F7700270276 /* LaunchScreen.storyboard */,
+				99B273EA28743F7700270276 /* Info.plist */,
+				99B273EB28743F7700270276 /* main.m */,
+				9946DC012875157400D695B7 /* MyRootViewController.h */,
+				9946DC022875157400D695B7 /* MyRootViewController.m */,
+			);
+			path = CodeViewTest;
+			sourceTree = "<group>";
+		};
+		99BE9A42287045670077D28D /* XibTest */ = {
+			isa = PBXGroup;
+			children = (
+				99BE9A43287045670077D28D /* AppDelegate.h */,
+				99BE9A44287045670077D28D /* AppDelegate.m */,
+				99BE9A46287045670077D28D /* SceneDelegate.h */,
+				99BE9A47287045670077D28D /* SceneDelegate.m */,
+				99BE9A4F287045690077D28D /* Assets.xcassets */,
+				99BE9A51287045690077D28D /* LaunchScreen.storyboard */,
+				99BE9A54287045690077D28D /* Info.plist */,
+				99BE9A55287045690077D28D /* main.m */,
+				99BE9A5A2872805F0077D28D /* RootViewController.h */,
+				99BE9A5B2872805F0077D28D /* RootViewController.m */,
+				99BE9A5C2872805F0077D28D /* RootViewController.xib */,
+			);
+			path = XibTest;
+			sourceTree = "<group>";
+		};
 		99C9C3FB284A0363005E2FB5 = {
 			isa = PBXGroup;
 			children = (
 				99C9C406284A0364005E2FB5 /* MyIOSDemo */,
 				99C9C422284A036A005E2FB5 /* MyIOSDemoTests */,
 				99C9C42C284A036A005E2FB5 /* MyIOSDemoUITests */,
+				99BE9A42287045670077D28D /* XibTest */,
+				99B273D828743F7500270276 /* CodeViewTest */,
 				99C9C405284A0364005E2FB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +190,8 @@
 				99C9C404284A0364005E2FB5 /* MyIOSDemo.app */,
 				99C9C41F284A036A005E2FB5 /* MyIOSDemoTests.xctest */,
 				99C9C429284A036A005E2FB5 /* MyIOSDemoUITests.xctest */,
+				99BE9A41287045670077D28D /* XibTest.app */,
+				99B273D728743F7400270276 /* CodeViewTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +213,7 @@
 				996AB8CB284C5227000B3AB1 /* Student.h */,
 				996AB8CC284C5239000B3AB1 /* Student.m */,
 				99D314BD285B140400A6EB9D /* Empty.xib */,
+				99380A53286AA83B00542BDF /* PrefixHeader.pch */,
 			);
 			path = MyIOSDemo;
 			sourceTree = "<group>";
@@ -147,6 +238,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		99B273D628743F7400270276 /* CodeViewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B273EF28743F7700270276 /* Build configuration list for PBXNativeTarget "CodeViewTest" */;
+			buildPhases = (
+				99B273D328743F7400270276 /* Sources */,
+				99B273D428743F7400270276 /* Frameworks */,
+				99B273D528743F7400270276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeViewTest;
+			productName = CodeViewTest;
+			productReference = 99B273D728743F7400270276 /* CodeViewTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99BE9A40287045670077D28D /* XibTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99BE9A59287045690077D28D /* Build configuration list for PBXNativeTarget "XibTest" */;
+			buildPhases = (
+				99BE9A3D287045670077D28D /* Sources */,
+				99BE9A3E287045670077D28D /* Frameworks */,
+				99BE9A3F287045670077D28D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XibTest;
+			productName = XibTest;
+			productReference = 99BE9A41287045670077D28D /* XibTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 		99C9C403284A0364005E2FB5 /* MyIOSDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99C9C433284A036A005E2FB5 /* Build configuration list for PBXNativeTarget "MyIOSDemo" */;
@@ -209,6 +334,12 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					99B273D628743F7400270276 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					99BE9A40287045670077D28D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					99C9C403284A0364005E2FB5 = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -238,11 +369,32 @@
 				99C9C403284A0364005E2FB5 /* MyIOSDemo */,
 				99C9C41E284A036A005E2FB5 /* MyIOSDemoTests */,
 				99C9C428284A036A005E2FB5 /* MyIOSDemoUITests */,
+				99BE9A40287045670077D28D /* XibTest */,
+				99B273D628743F7400270276 /* CodeViewTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		99B273D528743F7400270276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B273E928743F7700270276 /* LaunchScreen.storyboard in Resources */,
+				99B273E628743F7700270276 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99BE9A3F287045670077D28D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99BE9A53287045690077D28D /* LaunchScreen.storyboard in Resources */,
+				99BE9A50287045690077D28D /* Assets.xcassets in Resources */,
+				99BE9A5E2872805F0077D28D /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99C9C402284A0364005E2FB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,6 +423,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		99B273D328743F7400270276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B273DB28743F7500270276 /* AppDelegate.m in Sources */,
+				99B273EC28743F7700270276 /* main.m in Sources */,
+				9946DC032875157400D695B7 /* MyRootViewController.m in Sources */,
+				99B273DE28743F7500270276 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99BE9A3D287045670077D28D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99BE9A45287045670077D28D /* AppDelegate.m in Sources */,
+				99BE9A56287045690077D28D /* main.m in Sources */,
+				99BE9A5D2872805F0077D28D /* RootViewController.m in Sources */,
+				99BE9A48287045670077D28D /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99C9C400284A0364005E2FB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,6 +490,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		99B273E728743F7700270276 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99B273E828743F7700270276 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		99BE9A51287045690077D28D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99BE9A52287045690077D28D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		99C9C410284A0364005E2FB5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -335,6 +525,116 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		99B273ED28743F7700270276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B3CS29M3G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeViewTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zyx.CodeViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99B273EE28743F7700270276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B3CS29M3G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeViewTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zyx.CodeViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99BE9A57287045690077D28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B3CS29M3G;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyIOSDemo/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XibTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zyx.XibTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99BE9A58287045690077D28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B3CS29M3G;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyIOSDemo/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XibTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zyx.XibTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		99C9C431284A036A005E2FB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -385,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -437,7 +737,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -452,7 +752,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CSSAS37M3Q;
+				DEVELOPMENT_TEAM = 6S75799T3V;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyIOSDemo/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyIOSDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -480,7 +782,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CSSAS37M3Q;
+				DEVELOPMENT_TEAM = 6S75799T3V;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyIOSDemo/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyIOSDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -568,6 +872,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		99B273EF28743F7700270276 /* Build configuration list for PBXNativeTarget "CodeViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B273ED28743F7700270276 /* Debug */,
+				99B273EE28743F7700270276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99BE9A59287045690077D28D /* Build configuration list for PBXNativeTarget "XibTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99BE9A57287045690077D28D /* Debug */,
+				99BE9A58287045690077D28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		99C9C3FF284A0363005E2FB5 /* Build configuration list for PBXProject "MyIOSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
