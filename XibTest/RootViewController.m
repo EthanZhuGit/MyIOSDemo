@@ -8,6 +8,8 @@
 #import "RootViewController.h"
 
 @interface RootViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UIButton *myBtn;
 
 @end
 

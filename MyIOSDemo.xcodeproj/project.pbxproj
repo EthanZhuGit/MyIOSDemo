@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30CE83E251BA6A24F3584746 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CE877D8B50A392A1AA7080 /* Student.m */; };
+		30CE84CBBFFA5BC5089A4B8C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CE8B54A21A9D70DAD274A5 /* Person.m */; };
 		9946DC032875157400D695B7 /* MyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9946DC022875157400D695B7 /* MyRootViewController.m */; };
-		996AB8CD284C5239000B3AB1 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 996AB8CC284C5239000B3AB1 /* Student.m */; };
 		99B273DB28743F7500270276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273DA28743F7500270276 /* AppDelegate.m */; };
 		99B273DE28743F7500270276 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273DD28743F7500270276 /* SceneDelegate.m */; };
 		99B273E628743F7700270276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B273E528743F7700270276 /* Assets.xcassets */; };
@@ -52,11 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30CE874513D08AAAF8BDE111 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		30CE877D8B50A392A1AA7080 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		30CE8AEA9148E9680111BA07 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		30CE8B54A21A9D70DAD274A5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		99380A53286AA83B00542BDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9946DC012875157400D695B7 /* MyRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRootViewController.h; sourceTree = "<group>"; };
 		9946DC022875157400D695B7 /* MyRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRootViewController.m; sourceTree = "<group>"; };
-		996AB8CB284C5227000B3AB1 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		996AB8CC284C5239000B3AB1 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		99B273D728743F7400270276 /* CodeViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B273D928743F7500270276 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99B273DA28743F7500270276 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,6 +140,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30CE8117BD4A034864C9F265 /* syntax */ = {
+			isa = PBXGroup;
+			children = (
+				30CE8AEA9148E9680111BA07 /* Student.h */,
+				30CE877D8B50A392A1AA7080 /* Student.m */,
+				30CE8B54A21A9D70DAD274A5 /* Person.m */,
+				30CE874513D08AAAF8BDE111 /* Person.h */,
+			);
+			path = syntax;
+			sourceTree = "<group>";
+		};
 		99B273D828743F7500270276 /* CodeViewTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,10 +224,9 @@
 				99C9C415284A036A005E2FB5 /* LaunchScreen.storyboard */,
 				99C9C418284A036A005E2FB5 /* Info.plist */,
 				99C9C419284A036A005E2FB5 /* main.m */,
-				996AB8CB284C5227000B3AB1 /* Student.h */,
-				996AB8CC284C5239000B3AB1 /* Student.m */,
 				99D314BD285B140400A6EB9D /* Empty.xib */,
 				99380A53286AA83B00542BDF /* PrefixHeader.pch */,
+				30CE8117BD4A034864C9F265 /* syntax */,
 			);
 			path = MyIOSDemo;
 			sourceTree = "<group>";
@@ -451,9 +464,10 @@
 			files = (
 				99C9C40F284A0364005E2FB5 /* ViewController.m in Sources */,
 				99C9C409284A0364005E2FB5 /* AppDelegate.m in Sources */,
-				996AB8CD284C5239000B3AB1 /* Student.m in Sources */,
 				99C9C41A284A036A005E2FB5 /* main.m in Sources */,
 				99C9C40C284A0364005E2FB5 /* SceneDelegate.m in Sources */,
+				30CE83E251BA6A24F3584746 /* Student.m in Sources */,
+				30CE84CBBFFA5BC5089A4B8C /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
