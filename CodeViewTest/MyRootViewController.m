@@ -7,9 +7,12 @@
 
 #import "MyRootViewController.h"
 
-@interface MyRootViewController ()
+@interface MyRootViewController () <UITextFieldDelegate, UITextViewDelegate>
 @property(strong, nonatomic) UILabel *myLabel;
 @property(strong, nonatomic) UIButton *myBtn;
+@property(strong, nonatomic) UITextField *nameTextFiled;
+@property(strong, nonatomic) UITextView *abstractTextView;
+
 @end
 
 @implementation MyRootViewController
@@ -21,7 +24,7 @@
     CGRect screen = [[UIScreen mainScreen] bounds];
     CGFloat labelWidth = 200;
     CGFloat labelHeight = 50;
-    CGFloat labelViewTop = 300;
+    CGFloat labelViewTop = 100;
     CGFloat labelViewLeft = (screen.size.width - labelWidth) / 2;
 
     CGRect frame = CGRectMake(labelViewLeft, labelViewTop, labelWidth, labelHeight);
@@ -41,16 +44,41 @@
     [_myBtn addTarget:self action:@selector(onViewClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_myBtn];
 
+    CGFloat nameTextFiledWidth = 200;
+    CGFloat nameTextFiledHeight = 50;
+    CGFloat nameViewSpaceTop = 10;
+    _nameTextFiled = [[UITextField alloc] initWithFrame:CGRectMake(_myLabel.frame.origin.x,
+            _myLabel.frame.origin.y + _myLabel.frame.size.height + nameViewSpaceTop, nameTextFiledWidth, nameTextFiledHeight)];
+    _nameTextFiled.borderStyle = UITextBorderStyleRoundedRect;
+    _nameTextFiled.placeholder = @"请输入";
+    _nameTextFiled.delegate = self;
+    [self.view addSubview:_nameTextFiled];
+
+    _abstractTextView = [[UITextView alloc] initWithFrame:CGRectMake(_nameTextFiled.frame.origin.x,
+            _nameTextFiled.frame.origin.y + _nameTextFiled.frame.size.height + 10, 200, 100)];
+
+    _abstractTextView.delegate = self;
+    [self.view addSubview:_abstractTextView];
 }
 
 
 - (void)onViewClick:(id)sender {
-    NSLog(@"%@ ",sender);
+    NSLog(@"%@ ", sender);
     NSLog(@"%d", (_myBtn == sender));
     if (sender == _myBtn) {
         _myLabel.text = @"fdfdfdf";
     }
 }
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSLog(@"%@ %lu %lu", string, range.location, range.length);
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    _abstractTextView.text=_nameTextFiled.text;
+}
+
 
 /*
 #pragma mark - Navigation

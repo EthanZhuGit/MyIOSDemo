@@ -7,10 +7,12 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIButton *myBtn;
 @property (weak, nonatomic) IBOutlet UIButton *myCancel;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextFiled;
+@property (weak, nonatomic) IBOutlet UITextView *abstractTextView;
 
 @end
 
@@ -20,8 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
 - (IBAction)onClick:(id)sender {
-    NSLog(@"%@ ",sender);
     if (sender == self.myBtn) {
         NSLog(@"myBtn");
     }else {
@@ -30,6 +32,30 @@
     [_myBtn setTitle:@"new" forState:UIControlStateNormal];
 //    self.myBtn.titleLabel.text = @"new";
     self.myLabel.text = @"fdfdf";
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    NSLog(@"");
+    return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    NSLog(@"");
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSLog(@"%@ %lu %lu ",string,range.length,range.location);
+    return YES;
+}
+
+- (BOOL)textFieldShouldClear:(UITextField *)textField {
+    NSLog(@"");
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"");
+    return YES;
 }
 
 
