@@ -17,8 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"application didFinishLaunchingWithOptions ");
-    NSLog(@"hello word123");
 
     Person *person = [[Person alloc] init];
     NSLog(@"person lastName=%@ ",person->lastName);
@@ -35,22 +33,21 @@
     stu1.age=20;
     [stu1 setAge:30];
     NSLog(@"stu1 %d ",[stu1 age]);
-//        NSLog(@"stu1 full name: %@ ",[stu1 info]);
 
     return YES;
 }
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSLog(@"applicationDidBecomeActive");
+    NSLog(@"");
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application{
-    NSLog(@"applicationWillEnterForeground");
+    NSLog(@"");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application{
-    NSLog(@"applicationWillResignActive");
+    NSLog(@"");
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application{
@@ -58,7 +55,7 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application{
-    NSLog(@"applicationWillTerminate");
+    NSLog(@"");
 }
 
 

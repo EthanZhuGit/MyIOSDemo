@@ -10,6 +10,7 @@
 		30CE83E251BA6A24F3584746 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CE877D8B50A392A1AA7080 /* Student.m */; };
 		30CE84CBBFFA5BC5089A4B8C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CE8B54A21A9D70DAD274A5 /* Person.m */; };
 		9946DC032875157400D695B7 /* MyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9946DC022875157400D695B7 /* MyRootViewController.m */; };
+		998FFFC5288001190074D4FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998FFFC4288001190074D4FA /* SecondViewController.m */; };
 		99B273DB28743F7500270276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273DA28743F7500270276 /* AppDelegate.m */; };
 		99B273DE28743F7500270276 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273DD28743F7500270276 /* SceneDelegate.m */; };
 		99B273E628743F7700270276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B273E528743F7700270276 /* Assets.xcassets */; };
@@ -32,7 +33,6 @@
 		99C9C424284A036A005E2FB5 /* MyIOSDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9C423284A036A005E2FB5 /* MyIOSDemoTests.m */; };
 		99C9C42E284A036A005E2FB5 /* MyIOSDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9C42D284A036A005E2FB5 /* MyIOSDemoUITests.m */; };
 		99C9C430284A036A005E2FB5 /* MyIOSDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9C42F284A036A005E2FB5 /* MyIOSDemoUITestsLaunchTests.m */; };
-		99D314BE285B140400A6EB9D /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99D314BD285B140400A6EB9D /* Empty.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +60,8 @@
 		99380A53286AA83B00542BDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9946DC012875157400D695B7 /* MyRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRootViewController.h; sourceTree = "<group>"; };
 		9946DC022875157400D695B7 /* MyRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRootViewController.m; sourceTree = "<group>"; };
+		998FFFC3288001190074D4FA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		998FFFC4288001190074D4FA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		99B273D728743F7400270276 /* CodeViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B273D928743F7500270276 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99B273DA28743F7500270276 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,7 +100,6 @@
 		99C9C429284A036A005E2FB5 /* MyIOSDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyIOSDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C9C42D284A036A005E2FB5 /* MyIOSDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyIOSDemoUITests.m; sourceTree = "<group>"; };
 		99C9C42F284A036A005E2FB5 /* MyIOSDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyIOSDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
-		99D314BD285B140400A6EB9D /* Empty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,9 +225,10 @@
 				99C9C415284A036A005E2FB5 /* LaunchScreen.storyboard */,
 				99C9C418284A036A005E2FB5 /* Info.plist */,
 				99C9C419284A036A005E2FB5 /* main.m */,
-				99D314BD285B140400A6EB9D /* Empty.xib */,
 				99380A53286AA83B00542BDF /* PrefixHeader.pch */,
 				30CE8117BD4A034864C9F265 /* syntax */,
+				998FFFC3288001190074D4FA /* SecondViewController.h */,
+				998FFFC4288001190074D4FA /* SecondViewController.m */,
 			);
 			path = MyIOSDemo;
 			sourceTree = "<group>";
@@ -413,7 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99C9C417284A036A005E2FB5 /* LaunchScreen.storyboard in Resources */,
-				99D314BE285B140400A6EB9D /* Empty.xib in Resources */,
 				99C9C414284A036A005E2FB5 /* Assets.xcassets in Resources */,
 				99C9C412284A0364005E2FB5 /* Main.storyboard in Resources */,
 			);
@@ -465,6 +466,7 @@
 				99C9C40F284A0364005E2FB5 /* ViewController.m in Sources */,
 				99C9C409284A0364005E2FB5 /* AppDelegate.m in Sources */,
 				99C9C41A284A036A005E2FB5 /* main.m in Sources */,
+				998FFFC5288001190074D4FA /* SecondViewController.m in Sources */,
 				99C9C40C284A0364005E2FB5 /* SceneDelegate.m in Sources */,
 				30CE83E251BA6A24F3584746 /* Student.m in Sources */,
 				30CE84CBBFFA5BC5089A4B8C /* Person.m in Sources */,

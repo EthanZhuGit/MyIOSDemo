@@ -12,6 +12,9 @@
 @property(strong, nonatomic) UIButton *myBtn;
 @property(strong, nonatomic) UITextField *nameTextFiled;
 @property(strong, nonatomic) UITextView *abstractTextView;
+@property(strong, nonatomic) UISwitch *mySwitch1;
+@property(strong, nonatomic) UISwitch *mySwitch2;
+@property(strong, nonatomic) UISegmentedControl *mySegmentedView;
 
 @end
 
@@ -54,11 +57,32 @@
     _nameTextFiled.delegate = self;
     [self.view addSubview:_nameTextFiled];
 
+    
     _abstractTextView = [[UITextView alloc] initWithFrame:CGRectMake(_nameTextFiled.frame.origin.x,
             _nameTextFiled.frame.origin.y + _nameTextFiled.frame.size.height + 10, 200, 100)];
 
     _abstractTextView.delegate = self;
+    _abstractTextView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:_abstractTextView];
+    
+    _mySwitch1 = [[UISwitch alloc] initWithFrame:CGRectMake(0, _myBtn.frame.origin.y+100, 100, 50)];
+    [_mySwitch1 addTarget:self action:@selector(switchStateChanged:) forControlEvents:UIControlEventValueChanged];
+    [_mySwitch1 setOn:TRUE animated:false];
+    [self.view addSubview:_mySwitch1];
+    
+    _mySwitch2 = [[UISwitch alloc] initWithFrame:CGRectMake(120, _myBtn.frame.origin.y+100, 100, 50)];
+    [_mySwitch2 addTarget:self action:@selector(switchStateChanged:) forControlEvents:UIControlEventValueChanged];
+    [_mySwitch2 setOn:!_mySwitch1.isOn animated:false];
+    [self.view addSubview:_mySwitch2];
+
+
+    NSArray *segments = @[@"春",@"夏",@"秋",@"冬"];
+    _mySegmentedView = [[UISegmentedControl alloc] initWithItems:segments];
+    frame = CGRectMake(100, _mySwitch1.frame.origin.y+60, screen.size.width-200, 60);
+    _mySegmentedView.frame = frame;
+    [_mySegmentedView addTarget:self action:@selector(segmentViewStateChanged:) forControlEvents:UIControlEventValueChanged];
+    [_mySegmentedView setSelectedSegmentIndex:0];
+    [self.view addSubview:_mySegmentedView];
 }
 
 
@@ -70,8 +94,28 @@
     }
 }
 
+
+-(void) switchStateChanged:(id)sender{
+    if (sender == _mySwitch1) {
+        [_mySwitch2 setOn:!_mySwitch1.isOn animated:true];
+    }else if(sender == _mySwitch2){
+        [_mySwitch1 setOn:!_mySwitch2.isOn animated:true];
+    }
+}
+
+
+-(void) segmentViewStateChanged:(id)sender{
+    UISegmentedControl *segment = (UISegmentedControl *)sender;
+    NSLog(@"index %li",segment.selectedSegmentIndex);
+}
+
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSLog(@"%@ %lu %lu", string, range.location, range.length);
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
     return YES;
 }
 
