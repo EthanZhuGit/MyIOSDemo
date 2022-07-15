@@ -8,7 +8,7 @@
 #import "SecondViewController.h"
 #import "WebKit/WebKit.h"
 
-@interface SecondViewController ()<WKNavigationDelegate>
+@interface SecondViewController ()<WKNavigationDelegate,WKUIDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *urlLabel;
 
@@ -24,7 +24,13 @@
     _urlLabel.text = self.url;
     CGFloat webViewTop =_urlLabel.frame.origin.y+_urlLabel.frame.size.height+10;
     _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, webViewTop, self.view.frame.size.width, self.view.frame.size.height-webViewTop)];
-    _webView.navigationDelegate =self;
+    
+    _webView.navigationDelegate = self;
+    _webView.UIDelegate = self;
+    _webView.backgroundColor = [UIColor redColor];
+    
+    [self.webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:NULL];
+
     [self.view addSubview:_webView];
     
     NSURL *nsUrl = [NSURL URLWithString:_url];
@@ -48,7 +54,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    NSLog(@"%@ ",_url);
+    NSLog(@"");
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -56,10 +62,47 @@
     NSLog(@"");
 }
 
+- (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
+    
+    // 修复_blank的bug
+    if (!navigationAction.targetFrame.isMainFrame) {
+        NSLog(@"");
+        [webView loadRequest:navigationAction.request];
+    }
+    
+    return nil;
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"title"]) {
+        NSLog(@"%@" ,self.webView.title);
+    }else{
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+           
+    }
+}
+
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
+    NSLog(@"");
+}
+
+
+- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation {
+    NSLog(@"");
+}
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    NSLog(@"");
+}
+
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error{
+    NSLog(@"%@ ",error);
+}
 
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
+    [self.webView removeObserver:self forKeyPath:@"title"];
     NSLog(@"");
 }
 
@@ -67,5 +110,7 @@
     [super viewWillDisappear:animated];
     NSLog(@"");
 }
+
+
 
 @end

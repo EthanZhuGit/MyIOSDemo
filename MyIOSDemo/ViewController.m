@@ -116,12 +116,14 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"%@ %@ ",segue.identifier,_nameTextFiled.text);
+
     if ([segue.identifier isEqualToString:@"showSecondView"]) {
         
     }
     SecondViewController *control = segue.destinationViewController;
-    control.url=_nameTextFiled.text;
+    NSString *value = _nameTextFiled.text;
+    NSLog(@"%@ %@ %@",segue.identifier,_nameTextFiled.text,value);
+    control.url = value;
 }
 
 - (void)viewDidDisappear:(BOOL)animated{

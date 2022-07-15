@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondViewController : UIViewController
 
-@property(weak,nonatomic) NSString *url;
+@property(nonatomic) NSString *url;
 
 @end
 
