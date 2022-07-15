@@ -17,12 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    NSLog(@"");
     if (@available(iOS 13.0,*)) {
-        
+        NSLog(@"ios 13 available");
     } else {
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        self.window.rootViewController = [[MyRootViewController alloc] init];
+        MyRootViewController *myRootView = [[MyRootViewController alloc] init];
+        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:myRootView];
+        self.window.rootViewController = navi;
         self.window.backgroundColor = [UIColor whiteColor];
         [self.window makeKeyAndVisible];
     }
