@@ -6,6 +6,7 @@
 //
 
 #import "MyRootViewController.h"
+#import "SecondViewController.h"
 
 @interface MyRootViewController () <UITextFieldDelegate, UITextViewDelegate>
 @property(strong, nonatomic) UILabel *myLabel;
@@ -90,7 +91,9 @@
     NSLog(@"%@ ", sender);
     NSLog(@"%d", (_myBtn == sender));
     if (sender == _myBtn) {
-        _myLabel.text = @"fdfdfdf";
+        SecondViewController *second = [[SecondViewController alloc]init];
+        second.url=_nameTextFiled.text;
+        [self.navigationController pushViewController:second animated:true];
     }
 }
 

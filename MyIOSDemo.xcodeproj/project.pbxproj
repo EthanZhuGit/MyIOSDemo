@@ -10,6 +10,7 @@
 		30CE83E251BA6A24F3584746 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CE877D8B50A392A1AA7080 /* Student.m */; };
 		30CE84CBBFFA5BC5089A4B8C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CE8B54A21A9D70DAD274A5 /* Person.m */; };
 		9946DC032875157400D695B7 /* MyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9946DC022875157400D695B7 /* MyRootViewController.m */; };
+		9982D1DA288240B000AC36AF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982D1D9288240B000AC36AF /* SecondViewController.m */; };
 		998FFFC5288001190074D4FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998FFFC4288001190074D4FA /* SecondViewController.m */; };
 		99B273DB28743F7500270276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273DA28743F7500270276 /* AppDelegate.m */; };
 		99B273DE28743F7500270276 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B273DD28743F7500270276 /* SceneDelegate.m */; };
@@ -60,6 +61,8 @@
 		99380A53286AA83B00542BDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9946DC012875157400D695B7 /* MyRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRootViewController.h; sourceTree = "<group>"; };
 		9946DC022875157400D695B7 /* MyRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRootViewController.m; sourceTree = "<group>"; };
+		9982D1D8288240B000AC36AF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9982D1D9288240B000AC36AF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		998FFFC3288001190074D4FA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		998FFFC4288001190074D4FA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		99B273D728743F7400270276 /* CodeViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +168,8 @@
 				99B273EB28743F7700270276 /* main.m */,
 				9946DC012875157400D695B7 /* MyRootViewController.h */,
 				9946DC022875157400D695B7 /* MyRootViewController.m */,
+				9982D1D8288240B000AC36AF /* SecondViewController.h */,
+				9982D1D9288240B000AC36AF /* SecondViewController.m */,
 			);
 			path = CodeViewTest;
 			sourceTree = "<group>";
@@ -441,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9982D1DA288240B000AC36AF /* SecondViewController.m in Sources */,
 				99B273DB28743F7500270276 /* AppDelegate.m in Sources */,
 				99B273EC28743F7700270276 /* main.m in Sources */,
 				9946DC032875157400D695B7 /* MyRootViewController.m in Sources */,
