@@ -49,8 +49,12 @@
 - (IBAction)onClick:(id)sender {
     if (sender == self.myBtn) {
         NSLog(@"myBtn");
-    } else {
+    } else if (sender == self.myCancel){
         NSLog(@"myCancel");
+    } else if (sender == self.alertBtn){
+        [self showAlertView:1 sourceView:nil];
+    } else if (sender ==self.actionSheetBtn){
+        [self showAlertView:2 sourceView:sender];
     }
     [_myBtn setTitle:@"new" forState:UIControlStateNormal];
 //    self.myBtn.titleLabel.text = @"new";
@@ -130,13 +134,53 @@
     control.url = value;
 }
 
-- (void)showAlertView:(int)type {
-    switch (type){
-        case 1:
+- (void)showAlertView:(int)type sourceView:(id) view {
+    NSLog(@"showAlertView");
+    switch (type) {
+        case 1: {
+            NSLog(@"showAlertView %d",type);
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Alert" message:@"this is a alert view" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *noAction = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+                NSLog(@"no action");
+            }];
+
+            UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+                NSLog(@"yes action %@ ",action);
+            }];
+
+            [alert addAction:noAction];
+            [alert addAction:yesAction];
+
+            [self presentViewController:alert animated:true completion:^(void){
+                NSLog(@"show completion ");
+            }];
+
             break;
-        case 2:
+        }
+        case 2:{
+            UIAlertController *actionSheetController = [[UIAlertController alloc] init];
+            UIAlertAction *destructiveAction = [UIAlertAction actionWithTitle:@"破坏性按钮" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action){
+                NSLog(@"destructive action");
+            }];
+
+            UIAlertAction *otherAction = [UIAlertAction actionWithTitle:@"新浪微博" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+                NSLog(@"other action");
+            }];
+
+            UIAlertAction *cancelActon = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
+                NSLog(@"cancel action");
+            }];
+
+            [actionSheetController addAction:destructiveAction];
+            [actionSheetController addAction:otherAction];
+            [actionSheetController addAction:cancelActon];
+            actionSheetController.popoverPresentationController.sourceView = view;
+
+            [self presentViewController:actionSheetController animated:true completion:nil];
+
             break;
+
+        }
     }
 }
 

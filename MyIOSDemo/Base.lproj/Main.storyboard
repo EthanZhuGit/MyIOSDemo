@@ -107,18 +107,24 @@
                                     <action selector="segmentStateChangeListener:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rrc-qN-nWK"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjY-Fq-ywz">
-                                <rect key="frame" x="154" y="555" width="107" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Action Sheet"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnd-Dh-0lG">
-                                <rect key="frame" x="41" y="554" width="86" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8j-RY-P4G">
+                                <rect key="frame" x="41" y="554" width="123" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Alert"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="AlertView"/>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YXw-ZL-daV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjY-Fq-ywz">
+                                <rect key="frame" x="200" y="553" width="141" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Action Sheet"/>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5z-fU-nQ1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -128,7 +134,7 @@
                     <connections>
                         <outlet property="abstractTextView" destination="MuA-pN-V8e" id="Tzw-Hb-iKe"/>
                         <outlet property="actionSheetBtn" destination="tjY-Fq-ywz" id="Hoy-c2-341"/>
-                        <outlet property="alertBtn" destination="qnd-Dh-0lG" id="CXU-O6-LGB"/>
+                        <outlet property="alertBtn" destination="V8j-RY-P4G" id="D1X-Ka-62A"/>
                         <outlet property="myAnotherSwitch" destination="wzw-K3-SfE" id="m00-r5-Ccd"/>
                         <outlet property="myBtn" destination="6bF-zq-X8O" id="8tZ-ng-q60"/>
                         <outlet property="myCancel" destination="CKV-uj-P2j" id="stg-1R-Hai"/>
