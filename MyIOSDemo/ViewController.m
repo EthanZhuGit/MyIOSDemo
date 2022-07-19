@@ -174,7 +174,7 @@
             [actionSheetController addAction:destructiveAction];
             [actionSheetController addAction:otherAction];
             [actionSheetController addAction:cancelActon];
-            actionSheetController.popoverPresentationController.sourceView = view;
+//            actionSheetController.popoverPresentationController.sourceView = view; //ios 端不影响，iPad端需要作为锚点
 
             [self presentViewController:actionSheetController animated:true completion:nil];
 
