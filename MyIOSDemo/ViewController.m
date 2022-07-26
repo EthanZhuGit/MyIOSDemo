@@ -22,6 +22,7 @@
 @property(weak, nonatomic) IBOutlet UIButton *alertBtn;
 
 @property(weak, nonatomic) IBOutlet UIButton *actionSheetBtn;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *myIndicator;
 
 @end
 
@@ -51,6 +52,11 @@
         NSLog(@"myBtn");
     } else if (sender == self.myCancel){
         NSLog(@"myCancel");
+        if ([_myIndicator isAnimating]) {
+            [_myIndicator stopAnimating];
+        }else{
+            [_myIndicator startAnimating];
+        }
     } else if (sender == self.alertBtn){
         [self showAlertView:1 sourceView:nil];
     } else if (sender ==self.actionSheetBtn){
