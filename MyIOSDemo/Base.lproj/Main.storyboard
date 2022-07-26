@@ -48,7 +48,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="确认"/>
                                 <connections>
                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNN-hl-te3"/>
-                                    <segue destination="IqW-Jy-vCU" kind="show" identifier="showSecondView" id="Z4n-tf-F7D"/>
+                                    <segue destination="IqW-Jy-vCU" kind="show" identifier="showSecondView" id="Xlf-bk-TTL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKV-uj-P2j">
@@ -126,6 +126,23 @@
                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5z-fU-nQ1"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="0rf-UK-4Nf">
+                                <rect key="frame" x="258" y="495" width="38" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gmu-sG-6Zv">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Add" id="EZe-5I-LUj"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NOf-KG-vR4"/>
+                                    <barButtonItem title="Delete" id="iJc-Ty-H39"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ULH-Gf-n5G"/>
+                                    <barButtonItem title="Save" id="9sx-Go-qtH"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jTI-9s-ZKF"/>
+                                    <barButtonItem title="Cancel" id="GLp-BA-ai5"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -138,6 +155,7 @@
                         <outlet property="myAnotherSwitch" destination="wzw-K3-SfE" id="m00-r5-Ccd"/>
                         <outlet property="myBtn" destination="6bF-zq-X8O" id="8tZ-ng-q60"/>
                         <outlet property="myCancel" destination="CKV-uj-P2j" id="stg-1R-Hai"/>
+                        <outlet property="myIndicator" destination="0rf-UK-4Nf" id="Xn6-sg-pgr"/>
                         <outlet property="myLabel" destination="JgX-TZ-gc8" id="GBV-tl-56V"/>
                         <outlet property="mySegmentView" destination="ggN-de-mDT" id="Ybo-MB-Qr5"/>
                         <outlet property="mySwitch" destination="m6g-jO-SDY" id="GaM-zk-T5p"/>
